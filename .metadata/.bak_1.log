@@ -1,4 +1,4 @@
-!SESSION 2024-12-10 22:05:00.958 -----------------------------------------------
+!SESSION 2025-07-09 00:57:22.096 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=11.0.18
 java.vendor=Eclipse Adoptium
@@ -6,112 +6,43 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
 
 This is a continuation of log file C:\Users\alber\JaspersoftWorkspace\.metadata\.bak_0.log
-Created Time: 2024-12-10 23:06:06.710
+Created Time: 2025-07-09 01:43:24.123
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.710
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.711
-!MESSAGE Error notifying a preference change listener. Check the log for details.
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.712
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.123
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -125,32 +56,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.713
-!MESSAGE Error notifying a preference change listener. Check the log for details.
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.146
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -164,32 +104,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.714
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.146
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -203,32 +152,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.715
-!MESSAGE Error notifying a preference change listener. Check the log for details.
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.155
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -242,32 +200,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.715
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.168
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -281,32 +248,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.716
-!MESSAGE Error notifying a preference change listener. Check the log for details.
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.177
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -320,32 +296,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.717
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.185
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -359,32 +344,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.717
-!MESSAGE Error notifying a preference change listener. Check the log for details.
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.187
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -398,32 +392,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.718
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.200
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -437,32 +440,41 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.718
-!MESSAGE Error notifying a preference change listener. Check the log for details.
+!ENTRY org.eclipse.ui 4 0 2025-07-09 01:43:24.204
+!MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
-	at org.eclipse.jface.text.source.AnnotationPainter.setAnnotationTypeColor(AnnotationPainter.java:1088)
-	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.handlePreferenceStoreChanged(SourceViewerDecorationSupport.java:588)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.firePropertyChangeEvent(ChainedPreferenceStore.java:156)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore.handlePropertyChangeEvent(ChainedPreferenceStore.java:368)
-	at org.eclipse.ui.texteditor.ChainedPreferenceStore$PropertyChangeListener.propertyChange(ChainedPreferenceStore.java:70)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
-	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
-	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:841)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:844)
-	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:951)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1442)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1431)
+	at com.jaspersoft.studio.model.command.OrphanElementCommand.<init>(OrphanElementCommand.java:55)
+	at com.jaspersoft.studio.editor.outline.OutlineTreeEditPartFactory.getOrphanCommand(OutlineTreeEditPartFactory.java:782)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.createAddCommand(BandEditPart.java:288)
+	at com.jaspersoft.studio.editor.gef.parts.band.BandEditPart$2.getAddCommand(BandEditPart.java:257)
+	at org.eclipse.gef.editpolicies.LayoutEditPolicy.getCommand(LayoutEditPolicy.java:207)
+	at org.eclipse.gef.editpolicies.ConstrainedLayoutEditPolicy.getCommand(ConstrainedLayoutEditPolicy.java:195)
+	at org.eclipse.gef.editparts.AbstractEditPart.getCommand(AbstractEditPart.java:485)
+	at org.eclipse.gef.tools.DragEditPartsTracker.getCommand(DragEditPartsTracker.java:309)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.getCommand(SearchParentDragTracker.java:543)
+	at org.eclipse.gef.tools.DragEditPartsTracker.handleDragInProgress(DragEditPartsTracker.java:396)
+	at com.jaspersoft.studio.editor.gef.parts.editPolicy.SearchParentDragTracker.handleDragInProgress(SearchParentDragTracker.java:290)
+	at org.eclipse.gef.tools.AbstractTool.mouseDrag(AbstractTool.java:1062)
+	at org.eclipse.gef.tools.SelectionTool.mouseDrag(SelectionTool.java:520)
+	at org.eclipse.gef.EditDomain.mouseDrag(EditDomain.java:241)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseMoved(DomainEventDispatcher.java:357)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseMove(LightweightSystem.java:531)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3691)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:97)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at com.jaspersoft.studio.rcp.intro.Application.start(Application.java:93)
 	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
@@ -476,7 +488,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.719
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.599
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -515,7 +527,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.719
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.599
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -554,7 +566,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.719
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.599
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -593,7 +605,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.721
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.599
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -632,7 +644,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.721
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.608
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -671,7 +683,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.721
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.610
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -710,7 +722,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.721
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.612
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -749,7 +761,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.722
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.614
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -788,7 +800,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.722
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.614
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -827,7 +839,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.722
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.616
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -866,7 +878,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.723
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.618
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -905,7 +917,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.723
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.618
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -944,7 +956,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.723
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.618
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -983,7 +995,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.723
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.621
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1022,7 +1034,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.724
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1061,7 +1073,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.724
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.624
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1100,7 +1112,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.724
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.624
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1139,7 +1151,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.725
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.624
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1178,7 +1190,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.725
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.624
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1217,7 +1229,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.725
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.629
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1256,7 +1268,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.725
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.630
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1295,7 +1307,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.726
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.630
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1334,7 +1346,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.726
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.630
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1373,7 +1385,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.728
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.630
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1412,7 +1424,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.728
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.630
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1451,7 +1463,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.729
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.630
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1490,7 +1502,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.730
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.630
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1529,7 +1541,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.730
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.630
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1568,7 +1580,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.731
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.630
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1607,7 +1619,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.731
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.641
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1646,7 +1658,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.732
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.641
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1685,7 +1697,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.732
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.644
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1724,7 +1736,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.733
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.645
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1763,7 +1775,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.733
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.645
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1802,7 +1814,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.733
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.645
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1841,7 +1853,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.734
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.645
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1880,7 +1892,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.734
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1919,7 +1931,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.734
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.654
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -1958,7 +1970,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.734
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.654
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1997,7 +2009,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.736
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.654
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2036,7 +2048,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.736
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.654
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2075,7 +2087,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.737
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.654
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2114,7 +2126,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.737
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.660
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2153,7 +2165,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.737
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.661
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2192,7 +2204,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.738
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.661
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2231,7 +2243,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.738
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.661
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2270,7 +2282,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.738
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.661
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2309,7 +2321,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.739
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.661
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2348,7 +2360,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.739
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.661
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2387,7 +2399,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.740
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.661
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2426,7 +2438,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.740
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.661
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2465,7 +2477,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.740
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.668
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2504,7 +2516,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.741
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.668
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2543,7 +2555,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.741
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.670
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2582,7 +2594,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.741
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.670
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2621,7 +2633,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.742
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.672
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2660,7 +2672,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.742
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.672
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2699,7 +2711,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.743
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.674
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2738,7 +2750,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.743
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.676
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2777,7 +2789,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.743
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.676
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2816,7 +2828,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.743
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.678
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2855,7 +2867,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.743
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.678
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2894,7 +2906,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.745
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.680
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2933,7 +2945,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.746
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.682
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -2972,7 +2984,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.747
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.684
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3011,7 +3023,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.747
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.686
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3050,7 +3062,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.747
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.688
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3089,7 +3101,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.748
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.688
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3128,7 +3140,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.749
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.692
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3167,7 +3179,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.749
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.693
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3206,7 +3218,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.749
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.693
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3245,7 +3257,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.751
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.696
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3284,7 +3296,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.751
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.696
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3323,7 +3335,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.751
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.698
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3362,7 +3374,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.752
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.698
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3401,7 +3413,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.752
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.698
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3440,7 +3452,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.752
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.708
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3479,7 +3491,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.752
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.708
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3518,7 +3530,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.753
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.711
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3557,7 +3569,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.753
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.711
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3596,7 +3608,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.753
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.711
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3635,7 +3647,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.753
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.711
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3674,7 +3686,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.754
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.711
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3713,7 +3725,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.754
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.711
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3752,7 +3764,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.754
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.711
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3791,7 +3803,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.754
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.711
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3830,7 +3842,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.755
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.711
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3869,7 +3881,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.755
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.711
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3908,7 +3920,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.755
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3947,7 +3959,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.755
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -3986,7 +3998,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.756
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4025,7 +4037,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.756
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4064,7 +4076,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.756
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4103,7 +4115,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.756
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4142,7 +4154,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.758
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4181,7 +4193,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.758
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4220,7 +4232,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.758
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4259,7 +4271,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.758
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4298,7 +4310,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.758
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.724
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4337,7 +4349,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.759
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.724
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4376,7 +4388,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.759
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.740
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4415,7 +4427,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.759
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.740
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4454,7 +4466,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.760
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.740
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4493,7 +4505,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.760
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.740
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4532,7 +4544,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.761
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.740
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4571,7 +4583,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.761
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.740
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4610,7 +4622,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.763
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.740
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4649,7 +4661,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.764
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.740
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4688,7 +4700,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.765
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.750
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4727,7 +4739,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.765
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.751
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4766,7 +4778,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.765
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.752
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4805,7 +4817,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.765
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.752
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4844,7 +4856,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.766
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.754
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4883,7 +4895,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.766
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.755
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -4922,7 +4934,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.766
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.755
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4961,7 +4973,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.767
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.757
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5000,7 +5012,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.767
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.758
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5039,7 +5051,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.767
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.758
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5078,7 +5090,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.768
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.760
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5117,7 +5129,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.768
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.763
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5156,7 +5168,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.768
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.763
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5195,7 +5207,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.768
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.763
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5234,7 +5246,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.769
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.763
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5273,7 +5285,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.769
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.763
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5312,7 +5324,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.769
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5351,7 +5363,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.770
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.771
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5390,7 +5402,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.770
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5429,7 +5441,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.771
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.771
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5468,7 +5480,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.771
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5507,7 +5519,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.771
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.771
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5546,7 +5558,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.771
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5585,7 +5597,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.772
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.771
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5624,7 +5636,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.772
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5663,7 +5675,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.772
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.771
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5702,7 +5714,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.774
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.771
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5741,7 +5753,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.774
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.787
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5780,7 +5792,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.775
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.787
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5819,7 +5831,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.775
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.787
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5858,7 +5870,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.775
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.787
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5897,7 +5909,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.776
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.787
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -5936,7 +5948,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.776
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.787
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5975,7 +5987,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.776
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.787
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6014,7 +6026,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.777
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.795
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6053,7 +6065,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.777
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.797
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6092,7 +6104,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.777
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.797
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6131,7 +6143,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.778
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.799
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6170,7 +6182,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.778
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.801
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6209,7 +6221,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.779
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.803
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6248,7 +6260,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.779
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.803
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6287,7 +6299,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.779
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.805
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6326,7 +6338,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.780
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.805
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6365,7 +6377,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.780
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.807
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6404,7 +6416,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.781
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.809
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6443,7 +6455,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.781
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.809
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6482,7 +6494,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.781
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.809
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6521,7 +6533,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.782
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.812
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6560,7 +6572,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.782
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.812
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6599,7 +6611,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.782
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.812
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6638,7 +6650,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.783
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.812
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6677,7 +6689,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.783
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.819
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6716,7 +6728,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.783
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.819
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6755,7 +6767,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.785
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.819
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6794,7 +6806,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.785
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.819
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6833,7 +6845,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.786
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.819
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6872,7 +6884,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.786
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.819
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6911,7 +6923,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.786
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.819
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -6950,7 +6962,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.787
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.829
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6989,7 +7001,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.788
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.829
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7028,7 +7040,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.788
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.831
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7067,7 +7079,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.789
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.831
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7106,7 +7118,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.789
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.831
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7145,7 +7157,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.790
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.833
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7184,7 +7196,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.790
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.835
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7223,7 +7235,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.791
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.835
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7262,7 +7274,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.791
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.837
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7301,7 +7313,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.791
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.837
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7340,7 +7352,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.792
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.837
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7379,7 +7391,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.792
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.837
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7418,7 +7430,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.793
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.842
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7457,7 +7469,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.793
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.844
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7496,7 +7508,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.793
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.846
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7535,7 +7547,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.794
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.846
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7574,7 +7586,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.794
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.848
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7613,7 +7625,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.794
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.850
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7652,7 +7664,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.795
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.850
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7691,7 +7703,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.795
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.850
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7730,7 +7742,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.796
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.850
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7769,7 +7781,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.796
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.850
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7808,7 +7820,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.796
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.850
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7847,7 +7859,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.797
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.850
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7886,7 +7898,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.797
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.860
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7925,7 +7937,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.797
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.860
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -7964,7 +7976,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.799
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.860
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8003,7 +8015,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.800
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.860
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8042,7 +8054,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.800
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.860
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8081,7 +8093,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.800
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.869
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8120,7 +8132,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.801
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.871
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8159,7 +8171,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.801
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.871
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8198,7 +8210,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.802
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.874
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8237,7 +8249,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.802
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.874
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8276,7 +8288,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.802
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.877
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8315,7 +8327,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.802
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.877
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8354,7 +8366,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.803
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.877
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8393,7 +8405,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.803
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.877
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8432,7 +8444,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.803
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.877
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8471,7 +8483,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.804
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.877
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8510,7 +8522,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.804
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.886
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8549,7 +8561,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.804
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.886
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8588,7 +8600,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.804
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.886
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8627,7 +8639,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.805
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.886
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8666,7 +8678,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.805
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.891
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8705,7 +8717,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.805
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.891
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8744,7 +8756,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.805
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.894
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8783,7 +8795,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.806
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.895
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8822,7 +8834,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.806
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.895
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8861,7 +8873,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.806
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.895
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8900,7 +8912,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.807
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.895
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8939,7 +8951,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.807
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.895
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -8978,7 +8990,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.807
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.895
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9017,7 +9029,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.807
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.902
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9056,7 +9068,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.808
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.904
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9095,7 +9107,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.808
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.905
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9134,7 +9146,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.808
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.905
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9173,7 +9185,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.808
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.905
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9212,7 +9224,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.809
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.905
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9251,7 +9263,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.809
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.909
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9290,7 +9302,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.811
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.910
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9329,7 +9341,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.811
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.910
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9368,7 +9380,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.811
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.915
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9407,7 +9419,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.811
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.915
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9446,7 +9458,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.812
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.915
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9485,7 +9497,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.812
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.918
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9524,7 +9536,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.812
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.921
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9563,7 +9575,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.812
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.923
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9602,7 +9614,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.813
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.923
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9641,7 +9653,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.813
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.925
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9680,7 +9692,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.813
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.926
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9719,7 +9731,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.814
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.928
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9758,7 +9770,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.814
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.928
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9797,7 +9809,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.815
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.930
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9836,7 +9848,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.815
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.932
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9875,7 +9887,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.815
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.934
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9914,7 +9926,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.816
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.934
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9953,7 +9965,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.816
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.936
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -9992,7 +10004,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.816
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.938
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10031,7 +10043,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.817
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.938
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10070,7 +10082,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.817
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.940
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10109,7 +10121,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.817
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.942
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10148,7 +10160,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.817
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.944
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10187,7 +10199,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.818
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.944
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10226,7 +10238,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.818
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.944
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10265,7 +10277,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.818
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.944
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10304,7 +10316,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.818
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.944
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10343,7 +10355,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.819
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.944
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10382,7 +10394,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.819
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.944
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10421,7 +10433,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.819
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.944
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10460,7 +10472,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.820
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.944
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10499,7 +10511,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.820
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.944
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10538,7 +10550,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.820
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.958
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10577,7 +10589,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.821
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.958
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10616,7 +10628,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.821
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.958
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10655,7 +10667,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.821
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.958
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10694,7 +10706,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.821
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.958
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10733,7 +10745,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.823
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.958
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10772,7 +10784,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.823
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.958
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10811,7 +10823,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.824
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.958
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10850,7 +10862,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.824
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.968
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10889,7 +10901,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.824
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.969
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -10928,7 +10940,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.824
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.969
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10967,7 +10979,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.825
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.969
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11006,7 +11018,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.825
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.969
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11045,7 +11057,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.825
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.974
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11084,7 +11096,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.826
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.974
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11123,7 +11135,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.826
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.976
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11162,7 +11174,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.826
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.976
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11201,7 +11213,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.826
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.976
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11240,7 +11252,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.827
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.976
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11279,7 +11291,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.827
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.980
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11318,7 +11330,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.828
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.980
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11357,7 +11369,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.828
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.982
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11396,7 +11408,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.828
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.982
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11435,7 +11447,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.828
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.985
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11474,7 +11486,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.830
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.985
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11513,7 +11525,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.830
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.987
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11552,7 +11564,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.831
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.987
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11591,7 +11603,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.831
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.989
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11630,7 +11642,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.832
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.989
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11669,7 +11681,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.832
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.991
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11708,7 +11720,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.832
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.993
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11747,7 +11759,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.832
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.993
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11786,7 +11798,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.833
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.995
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11825,7 +11837,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.833
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.997
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11864,7 +11876,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.833
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:37.999
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11903,7 +11915,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.834
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:37.999
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -11942,7 +11954,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.834
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:38.002
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11981,7 +11993,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.834
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:38.004
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException
@@ -12020,7 +12032,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2024-12-10 23:06:06.834
+!ENTRY org.eclipse.ui.workbench 4 2 2025-07-09 01:43:38.005
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -12059,7 +12071,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.jface 4 0 2024-12-10 23:06:06.835
+!ENTRY org.eclipse.jface 4 0 2025-07-09 01:43:38.005
 !MESSAGE Error notifying a preference change listener. Check the log for details.
 !STACK 0
 java.lang.NullPointerException

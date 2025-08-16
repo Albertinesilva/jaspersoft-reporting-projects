@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="motocicletas-mais-utilizadas" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b31566c8-68c8-4a96-9013-37e00079c881">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Postgres Cad-Mototaxista Data Adapter"/>
+	<style name="estilo_cores_alternadas" mode="Opaque" backcolor="#FFFFFF">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2==0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#CCFFFF"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="LOGO_SINALEIRA" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT 
+    mm.modelo_moto AS nome_modelo,
+    m.nome_marca AS nome_marca,
+    mm.ativo AS modelo_ativo,
+    COUNT(c.id) AS quantidade_com_condutor
+FROM moto_modelo mm
+JOIN moto_marca m ON mm.marca_fk = m.id
+JOIN motocicleta mc ON mc.moto_modelo_fk = mm.id
+LEFT JOIN condutor c ON c.motocicleta_fk = mc.id
+WHERE c.id IS NOT NULL
+GROUP BY mm.modelo_moto, m.nome_marca, mm.ativo
+ORDER BY quantidade_com_condutor DESC]]>
+	</queryString>
+	<field name="nome_modelo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome_modelo"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome_modelo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_modelo"/>
+	</field>
+	<field name="nome_marca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_marca"/>
+	</field>
+	<field name="modelo_ativo" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="modelo_ativo"/>
+		<property name="com.jaspersoft.studio.field.label" value="modelo_ativo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_modelo"/>
+	</field>
+	<field name="quantidade_com_condutor" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="quantidade_com_condutor"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantidade_com_condutor"/>
+	</field>
+	<variable name="MAX_QTD_MODELO" class="java.lang.Long" calculation="Highest">
+		<variableExpression><![CDATA[$F{quantidade_com_condutor}]]></variableExpression>
+	</variable>
+	<variable name="MODELO_MAIS_CADASTRADO" class="java.lang.String">
+		<variableExpression><![CDATA[$F{quantidade_com_condutor}.longValue() == $V{MAX_QTD_MODELO}.longValue() ? $F{nome_modelo} : $V{MODELO_MAIS_CADASTRADO}]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+	<variable name="MIN_QTD_MODELO" class="java.lang.Long" calculation="Lowest">
+		<variableExpression><![CDATA[$F{quantidade_com_condutor}]]></variableExpression>
+	</variable>
+	<variable name="MODELO_MENOS_CADASTRADO" class="java.lang.String">
+		<variableExpression><![CDATA[$F{quantidade_com_condutor}.longValue() == $V{MIN_QTD_MODELO}.longValue() ? $F{nome_modelo} : $V{MODELO_MENOS_CADASTRADO}]]></variableExpression>
+		<initialValueExpression><![CDATA[""]]></initialValueExpression>
+	</variable>
+	<variable name="TOTAL_MOTOCICLETAS_CADASTRADA" class="java.lang.Long" calculation="Sum">
+		<variableExpression><![CDATA[$F{quantidade_com_condutor}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="80" backcolor="#19B6DD" uuid="bedc4632-bc27-4188-9b98-0963f533cb11"/>
+				<graphicElement>
+					<pen lineColor="#19B6DD"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="572" height="80" uuid="3a29c3ef-2064-4d32-9490-587649331e59"/>
+				<box>
+					<pen lineColor="#19B6DD"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<imageExpression><![CDATA[$P{LOGO_SINALEIRA}+"images/logo-sinaleira-smtt.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="30" width="339" height="30" uuid="5bdb1ac7-65f6-4ec6-8e24-c4ee863feecd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="20"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIOS CAD-MOTOTAXISTA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="30" backcolor="#E3E3E3" uuid="0df8071d-8a54-4d59-bf6a-3bc8be8372a1"/>
+				<graphicElement>
+					<pen lineColor="#E3E3E3"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="5" width="572" height="20" uuid="a6991a91-debe-4afc-8bad-b29b085e58cc"/>
+				<box>
+					<pen lineColor="#FFFFFF"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Município de Santo Antônio de Jesus – <b>CNPJ:</b> 10.764.307/0019-41 – Tel: (75) 3632-4889 – contratos.seaplan@saj.ba.gov.br]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="0" width="200" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="0330f89f-aaad-4938-b7e6-15ff533f2c1d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff4b9a02-4adb-4ccc-9578-7acfbccbd9e4"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modelo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="459" y="0" width="112" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="641740ab-bd6a-4853-979b-37d703081a13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="150" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="95dbb700-8419-45bb-96cb-d5db8740c5f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adc33478-2108-41ce-be81-62eb27748643"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="350" y="0" width="109" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="c2af2310-b1f7-492b-942a-7654ec86eb02">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ativo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="0" y="0" width="150" height="30" uuid="ec0493cc-e919-4a27-a24d-bffd6b6493a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="18413664-d45d-40c0-b3de-91aea4416d34"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome_marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="150" y="0" width="200" height="30" uuid="114b3062-e80e-4e63-a34f-c43176a2273f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3eee0236-de10-49c8-8348-e741b38b6a36"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome_modelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="350" y="0" width="108" height="30" uuid="222ff435-85be-40f8-a452-2b183a313ad6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42223dfa-0fbd-40ae-9430-d89771abfe4f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{modelo_ativo} ? "Ativo" : "Inativo"
+]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="458" y="0" width="114" height="30" uuid="80094357-50b1-4f1d-81e6-7334811f8735">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf9e0d38-453a-4311-a01b-bca74760ba3b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{quantidade_com_condutor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="2539d194-489b-4a23-9edb-8e102e5f8cb8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="280" y="0" width="100" height="30" uuid="201269fe-a991-45f0-972f-0ab3310c603c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField pattern=" dd MMMM, yyyy">
+				<reportElement x="480" y="0" width="91" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="0" width="110" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="60">
+			<rectangle>
+				<reportElement x="0" y="30" width="572" height="30" backcolor="#FFFF99" uuid="65cab695-a303-4661-a0de-986da62cc5d3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="180" y="0" width="110" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+			<textField pattern="dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="97235d48-571e-49f0-a8fe-ce519e8b1670"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="30" width="298" height="30" uuid="934c0e6d-dff7-423d-a5be-bc6133a1875f"/>
+				<box padding="2"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Modelo mais cadastrado:<b> " + $V{MODELO_MAIS_CADASTRADO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="30" width="268" height="30" uuid="1e93ea1d-3318-416b-91d2-f2bd88ea416d"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Modelo menos cadastrado:<b> " + $V{MODELO_MENOS_CADASTRADO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="46" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="30" backcolor="#D3D3D3" uuid="d5d6af79-870e-483e-9414-e8dc7c788bb6"/>
+			</rectangle>
+			<textField>
+				<reportElement x="250" y="0" width="160" height="30" uuid="218aa212-306f-45b2-89ab-94ba48e3eaa3"/>
+				<box topPadding="3" leftPadding="0" bottomPadding="3" rightPadding="3"/>
+				<textElement verticalAlignment="Middle" markup="html"/>
+				<textFieldExpression><![CDATA["<b>Maior valor:<b>  " + $V{MAX_QTD_MODELO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="158" height="30" uuid="23e9309a-ec11-469e-a43b-1345f63e3a7c"/>
+				<textElement verticalAlignment="Middle" markup="html"/>
+				<textFieldExpression><![CDATA["<b>Menor valor:<b>  " + $V{MIN_QTD_MODELO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="218" height="30" uuid="6d174666-707e-4ed8-a478-285ba577e41b"/>
+				<box padding="3"/>
+				<textElement verticalAlignment="Middle" markup="html"/>
+				<textFieldExpression><![CDATA["<b>Total de Motocicletas:<b>  " + $V{TOTAL_MOTOCICLETAS_CADASTRADA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

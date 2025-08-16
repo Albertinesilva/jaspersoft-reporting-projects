@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vencimento-alvara" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b31566c8-68c8-4a96-9013-37e00079c881">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Postgres Cad-Mototaxista Data Adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="363"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="632"/>
+	<style name="estilo_cores_alternadas" mode="Opaque" backcolor="#FFFFFF">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2==0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#CCFFFF" markup="none"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="LOGO_SINALEIRA" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT 
+    c.nome AS nome_condutor,
+    c.numero_ordem,
+    c.modalidade_condutor,
+    c.data_vencimento_alvara,
+    m.placa,
+    mm.nome_marca,
+    mdl.modelo_moto
+FROM 
+    condutor c
+JOIN 
+    motocicleta m ON c.motocicleta_fk = m.id
+JOIN 
+    moto_modelo mdl ON m.moto_modelo_fk = mdl.id
+JOIN 
+    moto_marca mm ON mdl.marca_fk = mm.id
+WHERE 
+    c.data_vencimento_alvara IS NOT NULL
+ORDER BY 
+    c.data_vencimento_alvara ASC]]>
+	</queryString>
+	<field name="nome_condutor" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome_condutor"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome_condutor"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="numero_ordem" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="numero_ordem"/>
+		<property name="com.jaspersoft.studio.field.label" value="numero_ordem"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="modalidade_condutor" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modalidade_condutor"/>
+		<property name="com.jaspersoft.studio.field.label" value="modalidade_condutor"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="data_vencimento_alvara" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="data_vencimento_alvara"/>
+		<property name="com.jaspersoft.studio.field.label" value="data_vencimento_alvara"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="placa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="placa"/>
+		<property name="com.jaspersoft.studio.field.label" value="placa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="motocicleta"/>
+	</field>
+	<field name="nome_marca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_marca"/>
+	</field>
+	<field name="modelo_moto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modelo_moto"/>
+		<property name="com.jaspersoft.studio.field.label" value="modelo_moto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_modelo"/>
+	</field>
+	<variable name="TOTAL_ALVARA_PROXIMO_VENCER" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[($F{data_vencimento_alvara} != null &&
+ !$F{data_vencimento_alvara}.before(java.sql.Date.valueOf(java.time.LocalDate.now()))) ? 1 : 0]]></variableExpression>
+	</variable>
+	<variable name="ALVARAS_VENCIDOS" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[($F{data_vencimento_alvara} != null &&
+ $F{data_vencimento_alvara}.before(java.sql.Date.valueOf(java.time.LocalDate.now()))) ? 1 : 0]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="80" backcolor="#19B6DD" uuid="bedc4632-bc27-4188-9b98-0963f533cb11"/>
+				<graphicElement>
+					<pen lineColor="#19B6DD"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="0" width="570" height="80" uuid="3a29c3ef-2064-4d32-9490-587649331e59"/>
+				<box>
+					<pen lineColor="#19B6DD"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<imageExpression><![CDATA[$P{LOGO_SINALEIRA}+"images/logo-sinaleira-smtt.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="30" width="339" height="30" uuid="5bdb1ac7-65f6-4ec6-8e24-c4ee863feecd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="20"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIOS CAD-MOTOTAXISTA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="30" backcolor="#E3E3E3" uuid="0df8071d-8a54-4d59-bf6a-3bc8be8372a1"/>
+				<graphicElement>
+					<pen lineColor="#E3E3E3"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="10" width="570" height="15" uuid="a6991a91-debe-4afc-8bad-b29b085e58cc"/>
+				<box>
+					<pen lineColor="#FFFFFF"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Município de Santo Antônio de Jesus – <b>CNPJ:</b> 10.764.307/0019-41 – Tel: (75) 3632-4889 – contratos.seaplan@saj.ba.gov.br]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="58" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="95dbb700-8419-45bb-96cb-d5db8740c5f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adc33478-2108-41ce-be81-62eb27748643"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº Ordem]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="58" y="0" width="101" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="0330f89f-aaad-4938-b7e6-15ff533f2c1d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff4b9a02-4adb-4ccc-9578-7acfbccbd9e4"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="159" y="0" width="80" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="96a91c72-570a-492c-86f4-65aa27aad37c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modalidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="239" y="0" width="117" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="641740ab-bd6a-4853-979b-37d703081a13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Motocicleta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="356" y="0" width="82" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="17f925ff-3959-442c-8f53-56aa2c4967e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="437a3ef5-4152-4d35-8b04-bd221aac830d"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Placa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="438" y="0" width="131" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="b801a07b-0da9-447e-a62d-8f9737591337">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cb93f2f-75ec-45f8-b45a-ff12bf5b091b"/>
+				</reportElement>
+				<box topPadding="0">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Venc. Alvará]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="0" y="0" width="58" height="30" uuid="a605d3a7-5190-41e7-951c-50cb0ed091d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f37c2b2d-2fc3-4031-b1e5-8229eb419046"/>
+				</reportElement>
+				<box padding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numero_ordem}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="239" y="0" width="118" height="30" uuid="44ee9d42-a611-47f3-bb85-753a515ac396">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c6e085b9-cabe-4c68-856f-8d8865fb0dfd"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome_marca}+ " - "+$F{modelo_moto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="58" y="0" width="100" height="30" uuid="4abe2c58-b4f1-4e41-844f-70033d0d7bb2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="45a5dff8-bc3a-4622-9027-e654389c821f"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome_condutor} != null && $F{nome_condutor}.split(" ").length > 1
+  ? $F{nome_condutor}.split(" ")[0] + " " + $F{nome_condutor}.split(" ")[1]
+  : ($F{nome_condutor} != null ? $F{nome_condutor} : "")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="357" y="0" width="80" height="30" uuid="c1f8d7b5-4f00-4fcf-b466-c4e3a5803e5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="10e75e4b-16e9-4efe-a21f-ed97abc80ffb"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{placa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternadas" x="158" y="0" width="81" height="30" uuid="2f06528e-a0e3-449a-90e8-598a8c30d422">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41905b03-1015-4022-aa65-8db7442d673d"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modalidade_condutor} != null  ? $F{modalidade_condutor}.substring(0,1).toUpperCase() + $F{modalidade_condutor}.substring(1).toLowerCase() : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement style="estilo_cores_alternadas" x="437" y="0" width="130" height="30" uuid="a41b6cfd-f37e-46d8-b63c-5010f9cff04b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9a2119ee-814e-40ce-952e-307c42b60814"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data_vencimento_alvara} != null
+? (
+    $F{data_vencimento_alvara}.before(new java.sql.Date(System.currentTimeMillis()))
+    ? "Venceu há " + 
+        java.time.temporal.ChronoUnit.DAYS.between(
+          $F{data_vencimento_alvara}.toLocalDate(), 
+          java.time.LocalDate.now()
+        ) + " dias" : "Faltam " + 
+        java.time.temporal.ChronoUnit.DAYS.between(
+          java.time.LocalDate.now(),
+          $F{data_vencimento_alvara}.toLocalDate()
+        ) + " dias para vencer"
+  )
+: " - "]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="2539d194-489b-4a23-9edb-8e102e5f8cb8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="280" y="0" width="100" height="30" uuid="201269fe-a991-45f0-972f-0ab3310c603c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField pattern=" dd MMMM, yyyy">
+				<reportElement x="480" y="0" width="90" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="0" width="110" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="60">
+			<rectangle>
+				<reportElement x="0" y="30" width="569" height="30" backcolor="#FFFF99" uuid="65cab695-a303-4661-a0de-986da62cc5d3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="180" y="0" width="110" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+			<textField pattern="dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="97235d48-571e-49f0-a8fe-ce519e8b1670"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="30" width="348" height="30" uuid="7b009f47-06e4-4623-9347-209e3f14d0d0"/>
+				<box padding="1"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Total de alvarás válidos ou próximos do vencimento:</b> "+$V{TOTAL_ALVARA_PROXIMO_VENCER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="30" width="209" height="30" uuid="34765dfb-8085-40b3-8156-e44bf813ed6c"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Total de alvarás vencidos : </b>"+$V{ALVARAS_VENCIDOS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="569" height="30" backcolor="#D3D3D3" uuid="d5d6af79-870e-483e-9414-e8dc7c788bb6"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="248" height="30" uuid="d38279fc-1c92-4790-a62a-54d3a64801b1"/>
+				<box padding="3"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Total de alvarás listados:</b> " + $V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

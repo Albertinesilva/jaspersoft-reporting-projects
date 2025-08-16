@@ -44,4 +44,15 @@
 		<item key="DIALOG_HEIGHT" value="845"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
+	<section name="com.jaspersoft.studio.editor.action.reportsplitting.ReportSplittingEditDialog">
+		<item key="dialogX" value="617"/>
+		<item key="dialogY" value="52"/>
+		<item key="dialogWidth" value="687"/>
+		<item key="dialogHeight" value="687"/>
+		<item key="DIALOG_X_ORIGIN" value="626"/>
+		<item key="DIALOG_Y_ORIGIN" value="61"/>
+		<item key="DIALOG_WIDTH" value="687"/>
+		<item key="DIALOG_HEIGHT" value="687"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
 </section>

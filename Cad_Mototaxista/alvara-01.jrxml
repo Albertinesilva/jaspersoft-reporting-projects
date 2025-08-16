@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="alvara-01" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="005ae564-ed2c-4cbb-a477-0c06fff8ca34">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Postgres Cad-Mototaxista Data Adapter"/>
+	<parameter name="LOGO_SINALEIRA" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LOGO_MUNICIPIO" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ID_CONDUTOR" class="java.lang.Long" isForPrompting="false"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT 
+    c.nome,
+    c.numero_ordem,
+    c.data_vencimento_alvara,
+    c.modalidade_condutor,
+    mm.nome_marca,
+    mmodelo.modelo_moto,
+    m.placa,
+    CONCAT('https://cad-mototaxistas.herokuapp.com/mensagens-alvara?id=', c.id) AS qrcode
+FROM 
+    condutor c
+JOIN 
+    motocicleta m ON c.motocicleta_fk = m.id
+JOIN 
+    moto_modelo mmodelo ON m.moto_modelo_fk = mmodelo.id
+JOIN 
+    moto_marca mm ON mmodelo.marca_fk = mm.id
+WHERE 
+    c.id = $P{ID_CONDUTOR} ]]>
+	</queryString>
+	<field name="nome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="numero_ordem" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="numero_ordem"/>
+		<property name="com.jaspersoft.studio.field.label" value="numero_ordem"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="data_vencimento_alvara" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="data_vencimento_alvara"/>
+		<property name="com.jaspersoft.studio.field.label" value="data_vencimento_alvara"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="modalidade_condutor" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modalidade_condutor"/>
+		<property name="com.jaspersoft.studio.field.label" value="modalidade_condutor"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="condutor"/>
+	</field>
+	<field name="nome_marca" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.label" value="nome_marca"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_marca"/>
+	</field>
+	<field name="modelo_moto" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="modelo_moto"/>
+		<property name="com.jaspersoft.studio.field.label" value="modelo_moto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="moto_modelo"/>
+	</field>
+	<field name="placa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="placa"/>
+		<property name="com.jaspersoft.studio.field.label" value="placa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="motocicleta"/>
+	</field>
+	<field name="qrcode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="qrcode"/>
+		<property name="com.jaspersoft.studio.field.label" value="qrcode"/>
+	</field>
+	<group name="nome">
+		<groupExpression><![CDATA[$F{nome}]]></groupExpression>
+	</group>
+	<group name="numero_ordem">
+		<groupExpression><![CDATA[$F{numero_ordem}]]></groupExpression>
+	</group>
+	<group name="data_vencimento_alvara">
+		<groupExpression><![CDATA[$F{data_vencimento_alvara}]]></groupExpression>
+	</group>
+	<group name="modalidade_condutor">
+		<groupExpression><![CDATA[$F{modalidade_condutor}]]></groupExpression>
+	</group>
+	<group name="nome_marca">
+		<groupExpression><![CDATA[$F{nome_marca}]]></groupExpression>
+	</group>
+	<group name="modelo_moto">
+		<groupExpression><![CDATA[$F{modelo_moto}]]></groupExpression>
+	</group>
+	<group name="placa">
+		<groupExpression><![CDATA[$F{placa}]]></groupExpression>
+	</group>
+	<group name="qrcode">
+		<groupExpression><![CDATA[$F{qrcode}]]></groupExpression>
+	</group>
+	<background>
+		<band height="2" splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="550" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="801" height="550" backcolor="#D3D3D3" uuid="f8dc15e4-5b18-43fd-add2-58ddf2e52ab9"/>
+				<graphicElement>
+					<pen lineWidth="6.0" lineColor="#000000"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="4" y="490" width="792" height="54" uuid="a86645c0-b53e-4942-b9a6-1eb3ec730c06"/>
+				<textElement textAlignment="Justified" verticalAlignment="Bottom" markup="html">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Autorizamos, por meio deste alvará, o Sr. <b>"+$F{nome}+"</b> a desempenhar suas atividades como mototaxista de forma regular e legal. O condutor encontra-se cadastrado sob o número de ordem <b>"+$F{numero_ordem}+"</b>, vinculado à modalidade <b>"+$F{modalidade_condutor}+"</b>, conforme registro nos sistemas da Secretaria Municipal de Trânsito e Transporte de Santo Antônio de Jesus. Para o exercício das suas funções, o condutor utiliza a motocicleta <b>"+$F{nome_marca}+" "+ $F{modelo_moto}+"</b>, de placa <b>"+$F{placa}+"</b>, devidamente vinculada ao cadastro. Este alvará tem validade até o dia <b>"+$F{data_vencimento_alvara}+"</b>, e poderá ser verificado por meio do código QR ou pelo endereço eletrônico: <b>https://pre-cadastro-mototaxista-saj.netlify.app/index.html</b>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="240" width="802" height="30" uuid="e9776337-69d2-454a-86ca-e220fc196790"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Condutor: </b>"+$F{nome}+" - <b>Motocicleta: </b>"+$F{nome_marca}+ " "+$F{modelo_moto}+" - <b>Placa:</b> "+$F{placa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="54" y="10" width="737" height="60" backcolor="#D3D3D3" uuid="266a224b-4d60-4a0b-9d02-5ce6745d856b"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Secretaria Municipal de Trânsito e Transportes do Município de Santo Antônio de Jesus – SMTT, <b>Alvará Nº: </b>"+$F{numero_ordem}+", <b>Modalidade: </b>"+$F{modalidade_condutor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="330" width="802" height="30" uuid="01733a10-9a14-4719-922f-df8b775d53f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data_vencimento_alvara} != null ? "<b>Válido até:</b> " + new SimpleDateFormat("dd/MM/yyyy").format($F{data_vencimento_alvara}) : ""]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RetainShape" rotation="None" hAlign="Center" vAlign="Top">
+				<reportElement mode="Opaque" x="301" y="120" width="200" height="80" backcolor="#FFFFFF" uuid="be53faed-eb2f-40a0-8fe1-c8c630455071">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{LOGO_SINALEIRA}+ "images/logo-sinaleira-smtt.png"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="339" y="390" width="123" height="88" uuid="b19a7da1-5ee6-4cd2-8edb-bbd84823276d"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{qrcode}]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<image>
+				<reportElement x="4" y="5" width="56" height="65" backcolor="#FFFFFF" uuid="b3a03eca-8415-4707-8aca-540da8718a62"/>
+				<box topPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{LOGO_MUNICIPIO}+ "images/pm-saj.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="50" backcolor="#FF3633" uuid="0f000044-954d-4aef-81a4-c163c39a1464"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Certificado Inexistente]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

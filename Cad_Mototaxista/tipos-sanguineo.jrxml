@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="condutores-tipos-sanguineo" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="665bc025-97e9-42d7-a780-fe1fd66400dd">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tipos-sanguineo" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b31566c8-68c8-4a96-9013-37e00079c881">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Postgres Cad-Mototaxista Data Adapter"/>
-	<property name="com.jaspersoft.studio.unit." value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
-	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<style name="estilo_cores_alternadas" mode="Opaque" backcolor="#FFFFFF">
 		<conditionalStyle>
 			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2==0]]></conditionExpression>
@@ -19,9 +10,6 @@
 		</conditionalStyle>
 	</style>
 	<parameter name="LOGO_SINALEIRA" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
-	</parameter>
-	<parameter name="IMAGEM_MOTO" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<queryString language="SQL">
@@ -137,114 +125,148 @@ ORDER BY
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="120" splitType="Stretch">
+		<band height="80" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="572" height="120" backcolor="#19B6DD" uuid="d9a02ac7-ba23-478f-8edb-e96b2c78ac28"/>
+				<reportElement x="0" y="0" width="570" height="80" backcolor="#19B6DD" uuid="bedc4632-bc27-4188-9b98-0963f533cb11"/>
 				<graphicElement>
-					<pen lineWidth="0.0" lineColor="#1B2834"/>
+					<pen lineColor="#19B6DD"/>
 				</graphicElement>
 			</rectangle>
 			<image>
-				<reportElement x="238" y="0" width="97" height="40" uuid="91c08ebc-9901-4c3d-973d-66d89fbac9d0"/>
+				<reportElement x="0" y="0" width="570" height="80" uuid="3a29c3ef-2064-4d32-9490-587649331e59"/>
 				<box>
-					<topPen lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<pen lineColor="#19B6DD"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FFFFFF"/>
 				</box>
 				<imageExpression><![CDATA[$P{LOGO_SINALEIRA}+"images/logo-sinaleira-smtt.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="117" y="50" width="339" height="48" uuid="662c9d67-75de-4421-a69e-91d02302ceeb"/>
+				<reportElement x="210" y="30" width="339" height="30" uuid="5bdb1ac7-65f6-4ec6-8e24-c4ee863feecd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="22"/>
+					<font fontName="SansSerif" size="20"/>
 				</textElement>
-				<text><![CDATA[Relatórios Cad-Mototaxista]]></text>
+				<text><![CDATA[RELATÓRIOS CAD-MOTOTAXISTA]]></text>
 			</staticText>
-			<image>
-				<reportElement x="10" y="92" width="30" height="28" uuid="47315027-3a47-4839-81fc-43989f838f4a"/>
-				<imageExpression><![CDATA[$P{IMAGEM_MOTO}+"images/moto.png"]]></imageExpression>
-			</image>
-			<image>
-				<reportElement x="530" y="90" width="30" height="28" uuid="161a5d78-1d0a-4062-be50-fab270e1126a"/>
-				<imageExpression><![CDATA[$P{IMAGEM_MOTO}+"images/moto.png"]]></imageExpression>
-			</image>
 		</band>
 	</title>
 	<pageHeader>
 		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="572" height="30" backcolor="#E3E3E3" uuid="a4f2dc64-035f-4db7-8142-158afedffe46"/>
+				<reportElement x="0" y="0" width="570" height="30" backcolor="#E3E3E3" uuid="0df8071d-8a54-4d59-bf6a-3bc8be8372a1"/>
 				<graphicElement>
-					<pen lineWidth="0.0"/>
+					<pen lineColor="#E3E3E3"/>
 				</graphicElement>
 			</rectangle>
-			<textField>
-				<reportElement x="2" y="0" width="568" height="30" uuid="5baece05-acf5-4028-9dec-9c4106803d32"/>
-				<box leftPadding="3"/>
-				<textElement verticalAlignment="Middle" markup="html"/>
-				<textFieldExpression><![CDATA["Município de Santo Antônio de Jesus – <b>CNPJ:</b> 10.764.307/0019-41 – Tel: (75) 3632-4889 – contratos.seaplan@saj.ba.gov.br"]]></textFieldExpression>
-			</textField>
+			<staticText>
+				<reportElement x="1" y="5" width="570" height="20" uuid="a6991a91-debe-4afc-8bad-b29b085e58cc"/>
+				<box>
+					<pen lineColor="#FFFFFF"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Município de Santo Antônio de Jesus – <b>CNPJ:</b> 10.764.307/0019-41 – Tel: (75) 3632-4889 – contratos.seaplan@saj.ba.gov.br]]></text>
+			</staticText>
 		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="30" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="69" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="39a75e1f-e44f-4599-8026-8eaee3135428">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14ec367e-6480-4bbe-91fd-b53980d6c756"/>
+				<reportElement mode="Opaque" x="80" y="0" width="210" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="0330f89f-aaad-4938-b7e6-15ff533f2c1d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff4b9a02-4adb-4ccc-9578-7acfbccbd9e4"/>
 				</reportElement>
-				<box padding="5"/>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Nº Ordem]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Opaque" x="69" y="0" width="180" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="8982ac04-6d35-48b7-b193-f4d9e9f19049">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54b94a47-b890-4605-99ba-13156a6a421b"/>
-				</reportElement>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="11" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Nome]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="249" y="0" width="121" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="34ee7127-2e6c-49a1-8bd8-0ee10c7d8a8d">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1d83895-6938-4e11-8618-25e48e30a528"/>
+				<reportElement mode="Opaque" x="290" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="641740ab-bd6a-4853-979b-37d703081a13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
 				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="11" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Tel. Comercial]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="370" y="0" width="110" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="630910ec-13e5-44b3-91e6-c6dee9782835">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="26f8fefe-594f-4dc3-bf16-1dce6390219d"/>
+				<reportElement mode="Opaque" x="390" y="0" width="80" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="17f925ff-3959-442c-8f53-56aa2c4967e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="437a3ef5-4152-4d35-8b04-bd221aac830d"/>
 				</reportElement>
+				<box>
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="11" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Data Nasc.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="480" y="0" width="92" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="4ef9d095-1f79-4a72-9a7b-abef4db08fff">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6fa3259a-795c-412b-b506-1e3384da84b2"/>
+				<reportElement mode="Opaque" x="470" y="0" width="99" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="b801a07b-0da9-447e-a62d-8f9737591337">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cb93f2f-75ec-45f8-b45a-ff12bf5b091b"/>
 				</reportElement>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+				<box topPadding="0">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="11" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Tipo Sanguíneo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="80" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="95dbb700-8419-45bb-96cb-d5db8740c5f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adc33478-2108-41ce-be81-62eb27748643"/>
+				</reportElement>
+				<box padding="3">
+					<pen lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº Ordem]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="30" splitType="Stretch">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<textField>
-				<reportElement style="estilo_cores_alternadas" x="0" y="0" width="69" height="30" uuid="5861bd07-a4c5-4b24-ad0d-35b2cec30fbe">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14ec367e-6480-4bbe-91fd-b53980d6c756"/>
+				<reportElement style="estilo_cores_alternadas" x="0" y="0" width="80" height="30" uuid="e550e687-ebab-4583-b8c9-13150a0cd281">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="adc33478-2108-41ce-be81-62eb27748643"/>
 				</reportElement>
-				<box padding="5">
+				<box padding="3">
 					<pen lineColor="#D6D6D6"/>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#D6D6D6"/>
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -252,13 +274,13 @@ ORDER BY
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{numero_ordem}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement style="estilo_cores_alternadas" x="69" y="0" width="180" height="30" uuid="dbf05c30-0e73-42ae-b505-512710dd36ff">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54b94a47-b890-4605-99ba-13156a6a421b"/>
+				<reportElement style="estilo_cores_alternadas" x="80" y="0" width="210" height="30" uuid="98233af8-94e5-4c0f-be87-8008cdd59ac4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ff4b9a02-4adb-4ccc-9578-7acfbccbd9e4"/>
 				</reportElement>
 				<box>
 					<pen lineColor="#D6D6D6"/>
@@ -268,13 +290,13 @@ ORDER BY
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement style="estilo_cores_alternadas" x="249" y="0" width="121" height="30" uuid="4a6fc0d0-c535-4590-b82b-d952baf10e93">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1d83895-6938-4e11-8618-25e48e30a528"/>
+				<reportElement style="estilo_cores_alternadas" x="290" y="0" width="100" height="30" uuid="eb8cf715-ef6e-43ca-850a-ae668e81c8a2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34f2d1c0-a95d-4f15-8163-0a4fc16dbbbc"/>
 				</reportElement>
 				<box>
 					<pen lineColor="#D6D6D6"/>
@@ -284,13 +306,13 @@ ORDER BY
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{telefone_comercial}]]></textFieldExpression>
 			</textField>
-			<textField pattern="dd/MM/yyyy">
-				<reportElement style="estilo_cores_alternadas" x="370" y="0" width="109" height="30" uuid="da06f798-7271-4e26-b9bc-dc69c983cdb4">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="26f8fefe-594f-4dc3-bf16-1dce6390219d"/>
+			<textField pattern="MM/dd/yyyy">
+				<reportElement style="estilo_cores_alternadas" x="390" y="0" width="80" height="30" uuid="38ebcdf7-d154-4283-9310-74af222d4cb6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="437a3ef5-4152-4d35-8b04-bd221aac830d"/>
 				</reportElement>
 				<box>
 					<pen lineColor="#D6D6D6"/>
@@ -300,13 +322,13 @@ ORDER BY
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{data_nascimento}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement style="estilo_cores_alternadas" x="479" y="0" width="92" height="30" uuid="bb955218-a683-4159-883c-d170b55e2d45">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6fa3259a-795c-412b-b506-1e3384da84b2"/>
+				<reportElement style="estilo_cores_alternadas" x="470" y="0" width="100" height="30" uuid="b5f3de4f-6bfd-49aa-9124-b66654223754">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cb93f2f-75ec-45f8-b45a-ff12bf5b091b"/>
 				</reportElement>
 				<box>
 					<pen lineColor="#D6D6D6"/>
@@ -316,7 +338,7 @@ ORDER BY
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tipo_sanguineo}]]></textFieldExpression>
 			</textField>
@@ -325,16 +347,16 @@ ORDER BY
 	<columnFooter>
 		<band height="30" splitType="Stretch">
 			<textField>
-				<reportElement x="180" y="0" width="100" height="30" uuid="e612ca81-6ea0-4aaa-9cf3-7108c00eca28"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="2539d194-489b-4a23-9edb-8e102e5f8cb8"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="280" y="0" width="100" height="30" uuid="0506a826-3ea5-4932-af83-061328824dd6"/>
+				<reportElement x="280" y="0" width="100" height="30" uuid="201269fe-a991-45f0-972f-0ab3310c603c"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
@@ -342,72 +364,74 @@ ORDER BY
 	</columnFooter>
 	<pageFooter>
 		<band height="30" splitType="Stretch">
-			<staticText>
-				<reportElement x="362" y="0" width="112" height="30" uuid="392b2c25-32ed-4cce-848f-7e8ac3d360c5"/>
-				<box padding="6"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
-				</textElement>
-				<text><![CDATA[Relatório criado em:]]></text>
-			</staticText>
-			<textField pattern="MMMM dd, yyyy">
-				<reportElement x="474" y="0" width="96" height="30" uuid="1fe06ec8-2ab9-47e7-9ac4-2cccc6e32b03"/>
+			<textField pattern=" dd MMMM, yyyy">
+				<reportElement x="480" y="0" width="90" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
 				<box padding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="380" y="0" width="110" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
 		</band>
 	</pageFooter>
 	<lastPageFooter>
 		<band height="60">
 			<rectangle>
-				<reportElement x="0" y="30" width="571" height="30" backcolor="#FFFF99" uuid="27a2d41b-ebbc-4b40-a77e-6b26668f661b"/>
+				<reportElement x="0" y="30" width="569" height="30" backcolor="#FFFF99" uuid="65cab695-a303-4661-a0de-986da62cc5d3"/>
 			</rectangle>
 			<textField>
-				<reportElement x="1" y="30" width="198" height="30" uuid="55ea01c2-3c69-4243-b123-33ac44aee416"/>
-				<box padding="3"/>
+				<reportElement x="0" y="30" width="230" height="30" uuid="5c411b19-8c3a-4d7f-803b-e1b33eac11a5"/>
+				<box padding="2"/>
 				<textElement verticalAlignment="Middle" markup="html">
 					<font fontName="SansSerif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["<b>Tipo sanguíneo mais frequente:</b> "+$V{TIPO_SANGUINEO_MAIS_FREQUENTE}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["<b>Tipo sanguíneo mais frequente: </b>"+$V{TIPO_SANGUINEO_MAIS_FREQUENTE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="360" y="30" width="210" height="30" uuid="cc732b3f-543c-47ec-95c9-f51b772a1226"/>
-				<textElement verticalAlignment="Middle" markup="styled">
+				<reportElement x="350" y="30" width="219" height="30" uuid="42a37717-3612-4cd6-9748-32b19517189d"/>
+				<textElement verticalAlignment="Middle" markup="html">
 					<font fontName="SansSerif"/>
 				</textElement>
-				<textFieldExpression><![CDATA["<b>Tipo sanguíneo menos frequente:</b>"+$V{TIPO_SANGUINEO_MENOS_FREQUENTE}]]></textFieldExpression>
-			</textField>
-			<textField pattern="MMMM dd, yyyy">
-				<reportElement x="474" y="0" width="96" height="30" uuid="8d39c8b4-fcde-48fa-be4e-b6dfb1eee676"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				<textFieldExpression><![CDATA["<b>Tipo sanguíneo menos frequente: </b>"+$V{TIPO_SANGUINEO_MENOS_FREQUENTE}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="362" y="0" width="112" height="30" uuid="de5f118a-7d13-4f36-aa15-92f641c6b41d"/>
-				<box padding="6"/>
+				<reportElement x="180" y="0" width="110" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
+				<box padding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="11"/>
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<text><![CDATA[Relatório criado em:]]></text>
 			</staticText>
+			<textField pattern="dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="97235d48-571e-49f0-a8fe-ce519e8b1670"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 	<summary>
 		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="571" height="30" backcolor="#E3E3E3" uuid="03bf7257-423c-4e7d-8260-59a43c823c96"/>
+				<reportElement x="0" y="0" width="569" height="30" backcolor="#D3D3D3" uuid="d5d6af79-870e-483e-9414-e8dc7c788bb6"/>
 			</rectangle>
 			<textField>
-				<reportElement x="1" y="0" width="518" height="30" uuid="f90f919c-d1c5-4ce4-ab7b-a15172606706"/>
-				<box leftPadding="3"/>
-				<textElement verticalAlignment="Middle" markup="html"/>
-				<textFieldExpression><![CDATA["<b>Resumo tipos sanguíneos:</b> "+"A+ = "+$V{A_POSITIVO}+ ", "+"A- = "+$V{A_NEGATIVO}+", "+"B+ = "+$V{B_POSITIVO}+", "+"B- = "+$V{B_NEGATIVO}+", "+"AB+ = "+$V{AB_POSITIVO}+", "+"AB- = "+$V{AB_NEGATIVO}+", "+"O+ = "+$V{O_POSITIVO}+", "+"O- = "+$V{O_NEGATIVO}]]></textFieldExpression>
+				<reportElement x="0" y="0" width="571" height="30" uuid="c5793fe0-2010-4b76-bece-9124a122b34d"/>
+				<box padding="2"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Resumo tipos sanguíneos:  </b>"+"A+ = "+$V{A_POSITIVO}+ ", "+"A- = "+$V{A_NEGATIVO}+", "+"B+ = "+$V{B_POSITIVO}+", "+"B- = "+$V{B_NEGATIVO}+", "+"AB+ = "+$V{AB_POSITIVO}+", "+"AB- = "+$V{AB_NEGATIVO}+", "+"O+ = "+$V{O_POSITIVO}+", "+"O- = "+$V{O_NEGATIVO}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>

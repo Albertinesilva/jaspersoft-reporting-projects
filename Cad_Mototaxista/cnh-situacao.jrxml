@@ -314,9 +314,9 @@ ORDER BY dias_para_vencer_ou_vencida ASC;]]>
 				<textFieldExpression><![CDATA["<b>Vencem até 30 dias: "+$V{VENCEM_PROXIMOS_30_DIAS}+"<b>"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="170" y="0" width="110" height="30" uuid="289469df-6269-431d-b1b5-fb580c777337"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="289469df-6269-431d-b1b5-fb580c777337"/>
 				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
+				<textElement verticalAlignment="Top">
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<text><![CDATA[Relatório criado em:]]></text>

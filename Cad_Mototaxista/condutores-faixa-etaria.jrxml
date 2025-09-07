@@ -298,22 +298,22 @@ ORDER BY ordem_faixa, dados.nome;]]>
 	</columnFooter>
 	<pageFooter>
 		<band height="30" splitType="Stretch">
-			<textField pattern=" dd MMMM, yyyy">
-				<reportElement x="480" y="0" width="91" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="380" y="0" width="100" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="6255303e-6593-411a-ac60-edf00a01222b"/>
 				<box padding="0"/>
 				<textElement verticalAlignment="Middle" markup="none">
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<text><![CDATA[Relatório criado em:]]></text>
 			</staticText>
+			<textField pattern=" dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="44e585fc-69af-4d02-a598-acb14bf0faec"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageFooter>
 	<lastPageFooter>
@@ -321,22 +321,6 @@ ORDER BY ordem_faixa, dados.nome;]]>
 			<rectangle>
 				<reportElement x="0" y="30" width="572" height="120" backcolor="#FFFF99" uuid="65cab695-a303-4661-a0de-986da62cc5d3"/>
 			</rectangle>
-			<staticText>
-				<reportElement x="180" y="0" width="100" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[Relatório criado em:]]></text>
-			</staticText>
-			<textField pattern="dd MMMM, yyyy">
-				<reportElement x="280" y="0" width="100" height="30" uuid="97235d48-571e-49f0-a8fe-ce519e8b1670"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<textField>
 				<reportElement x="0" y="50" width="572" height="20" uuid="6d90000d-20b5-4309-8559-014838f02950"/>
 				<box padding="2">
@@ -400,6 +384,22 @@ ORDER BY ordem_faixa, dados.nome;]]>
 				</textElement>
 				<text><![CDATA[Resumo por faixa etária de condutores:]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="c500ab45-5233-4dcb-a2e8-76db81bc05cf"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+			<textField pattern="dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="27adbab0-630d-46f6-9a6b-e7f4a9d0930d"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 	<summary>

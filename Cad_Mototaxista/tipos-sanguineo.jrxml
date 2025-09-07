@@ -365,15 +365,15 @@ ORDER BY
 	<pageFooter>
 		<band height="30" splitType="Stretch">
 			<textField pattern=" dd MMMM, yyyy">
-				<reportElement x="480" y="0" width="90" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
+				<reportElement x="280" y="0" width="100" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
 				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle" markup="none">
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="380" y="0" width="110" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
 				<box padding="0"/>
 				<textElement verticalAlignment="Middle" markup="none">
 					<font fontName="SansSerif" size="10"/>
@@ -403,7 +403,7 @@ ORDER BY
 				<textFieldExpression><![CDATA["<b>Tipo sanguíneo menos frequente: </b>"+$V{TIPO_SANGUINEO_MENOS_FREQUENTE}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="180" y="0" width="110" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
 				<box padding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="SansSerif" size="10"/>

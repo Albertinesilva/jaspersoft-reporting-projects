@@ -328,22 +328,22 @@ ORDER BY
 	</columnFooter>
 	<pageFooter>
 		<band height="30" splitType="Stretch">
-			<textField pattern=" dd MMMM, yyyy">
-				<reportElement x="480" y="0" width="90" height="30" uuid="38b26a55-5df9-4786-973b-9848d35cfef4"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="380" y="0" width="110" height="30" uuid="44c2a91d-5d46-4f49-9aa4-812476ca7051"/>
+				<reportElement x="180" y="0" width="100" height="30" uuid="515a65b9-0470-46c5-9814-42512a9d74bb"/>
 				<box padding="0"/>
 				<textElement verticalAlignment="Middle" markup="none">
 					<font fontName="SansSerif" size="10"/>
 				</textElement>
 				<text><![CDATA[Relatório criado em:]]></text>
 			</staticText>
+			<textField pattern=" dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="474f9437-2843-4113-8b41-f1407795a287"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageFooter>
 	<lastPageFooter>
@@ -351,22 +351,6 @@ ORDER BY
 			<rectangle>
 				<reportElement x="0" y="30" width="569" height="30" backcolor="#FFFF99" uuid="65cab695-a303-4661-a0de-986da62cc5d3"/>
 			</rectangle>
-			<staticText>
-				<reportElement x="180" y="0" width="110" height="30" uuid="acfcc9f1-4598-4f15-917a-29fdf5ca69ad"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<text><![CDATA[Relatório criado em:]]></text>
-			</staticText>
-			<textField pattern="dd MMMM, yyyy">
-				<reportElement x="280" y="0" width="100" height="30" uuid="97235d48-571e-49f0-a8fe-ce519e8b1670"/>
-				<box padding="0"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="SansSerif" size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
 			<textField>
 				<reportElement x="1" y="30" width="348" height="30" uuid="7b009f47-06e4-4623-9347-209e3f14d0d0"/>
 				<box padding="1"/>
@@ -381,6 +365,22 @@ ORDER BY
 					<font size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA["<b>Total de alvarás vencidos : </b>"+$V{ALVARAS_VENCIDOS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="f91799f8-1cd6-481d-b419-ba6469124289"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Relatório criado em:]]></text>
+			</staticText>
+			<textField pattern="dd MMMM, yyyy">
+				<reportElement x="280" y="0" width="100" height="30" uuid="9a152b3b-6b8d-4277-90d1-b4dfc2461d53"/>
+				<box padding="0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 		</band>
 	</lastPageFooter>

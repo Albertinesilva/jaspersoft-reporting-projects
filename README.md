@@ -72,7 +72,7 @@ Os conhecimentos aplicados aqui são utilizados em:
 ## 👨‍💻 Author
 
 **Albert Silva de Jesus**  
-Java Backend Developer | Spring Boot  
+Java Backend Developer | Spring Boot
 
 ---
 
